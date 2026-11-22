@@ -1,0 +1,38 @@
+name: quan_ly_nuoi_ong
+description: Hệ thống quản lý việc nuôi ong (Flutter + SQLite).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # intl được khóa phiên bản bởi flutter_localizations nên để khoảng rộng
+  intl: ">=0.19.0 <1.0.0"
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  shared_preferences: ^2.3.2
+  crypto: ^3.0.5
+  flutter_local_notifications: ^17.2.4
+  timezone: ^0.9.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
